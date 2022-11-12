@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+/*------------------------MENU NAVEGACON FLEX-------------------*/
+.navegacion_flex {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: height 3s;
+    
+}
+
+.navegacion_flex li:hover {
+    background-color: blue;
+}
+/*---------------------FIN MENU NAVEGACON FLEX-------------------*/
+
+
+
+/*---------------------H1 H2 H6-------------------*/
+h1, h2, h6 {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    }
+
+h1 {
+    text-align: center;
+    padding: 3rem;
+    font-size: 5rem;
+
+    /*ANIMACION H1*/
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+    /*ANIMACION H1*/
+@keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 4;
+        }
+}
+/*-------------------FIN H1 H2 H6-------------------*/
+
+
+
+
+/*----------------------INDEX - NUMERALES -------------------------*/
+.numerales {
+    Font-size: 4rem;
+    margin: 2rem;
+    
+    display: grid;
+    grid-template-areas: 
+    "texto1 texto2 texto3";
+    grid-template-columns: 300px 300px 300px;
+       
+}
+
+.p1 {
+    grid-area: texto1;
+}
+
+.p2 {
+    grid-area: texto2;
+}
+
+.p3 {
+    grid-area: texto3;
+}
+
+.p1, .p2, .p3 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .numerales {
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "texto1"
+        "texto2"
+        "texto3";
+        justify-content: center;
+    }
+}
+/*FIN Media Queries*/
+
+
+/*Animacion Numerales*/
+.p1 {
+    animation-duration: 6s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+
+.p2 {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+
+.p3 {
+    animation-duration: 12s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+/*FIN Animacion Numerales*/
+
+/*----------------FIN INDEX - NUMERALES----------------------------*/
+
+
+
+
+/*-------------------INSTAGRAM REEL INDEX---------------------*/
+.Instagramreel_flex {
+    display: flex;
+    justify-content: space-evenly;
+
+    display: grid;
+    grid-template-areas: 
+    "reel1 reel2 reel3";
+    grid-template-columns: 300px 300px 300px;
+}
+
+.reel1 {
+    grid-area: reel1;
+}
+
+.reel2 {
+    grid-area: reel2;
+}
+
+.reel3 {
+    grid-area: reel3;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .Instagramreel_flex {
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "reel1" 
+        "reel2" 
+        "reel3";
+        justify-content: center;
+}
+    .reel1, .reel2, .reel3 {
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+    }
+}
+
+
+
+iframe {
+    border: 0.2rem orangered solid;
+    border-radius: 1rem;
+}
+/*-------------------FIN INSTAGRAM REEL INDEX---------------------*/
+
+
+
+
+
+/*-------------------NOSOTROS---------------------*/
+.nosotros {
+    display: grid;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "n1 n1 n1"
+    "n2 libre2 libre2"
+    "libre3 libre3 n3"
+    "n4 libre4 libre4"
+    "libre5 libre5 n5"
+    "n6 libre6 libre6"
+    "libre7 libre7 n7"
+    "n8 n8 n8";
+    grid-template-columns: 1fr 0.5fr 1fr;
+    margin: 1rem;
+    
+
+}
+
+
+
+
+.nh1 {
+    grid-area: h1;
+}
+
+.n1, .n8 {
+    grid-area: n1;
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    border-top: solid 0.2rem orangered;
+    border-bottom: solid 0.2rem orangered;
+}
+
+
+.n1 {
+    margin-bottom: 1rem;
+}
+
+.n2 {
+    grid-area: n2;
+}
+
+.n3 {
+    grid-area: n3;
+}
+
+.n4 {
+    grid-area: n4;
+}
+
+.n5 {
+    grid-area: n5;
+}
+
+.n6 {
+    grid-area: n6;
+}
+
+.n7 {
+    grid-area: n7;
+}
+
+.n8 {
+    grid-area: n8;
+    margin-top: 1rem;
+}
+
+.n2, .n4, .n6 {
+    display: flex;
+    text-align: justify;
+    padding: 0.3rem;
+    font-size: 2rem;
+    border-bottom: solid 0.2rem orangered;
+    border-top: solid 0.2rem orangered;
+    margin-bottom: 1rem;
+}
+
+.n3, .n7, .n5 {
+    display: flex;
+    text-align: justify;
+    padding: 0.3rem;
+    font-size: 2rem;
+    border-top: solid 0.2rem orangered;
+    border-bottom: solid 0.2rem orangered;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .nosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h1"
+        "n1"
+        "n2"
+        "n3"
+        "n4"
+        "n5"
+        "n6"
+        "n7"
+        "n8";
+        justify-content: center;
+    }
+
+    .n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+        border-top: 0.2rem;
+    }
+
+}
+
+
+  /*ANIMACION TEXTOS*/
+  .n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+/*-----------------FIN NOSOTROS---------------------*/
+
+
+
+
+
+
+
+
+ul {
+    color: white;
+    font-family:  'Alegreya Sans SC', sans-serif;
+      
+}
+
+p {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    
+}
+
+form {
+    color: white;
+}
+
+
+body {
+    background-image: url(../Img/IMG_20200513_160612.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+
+
+
+
+/*-------------------LOGO CIRCULAR INDEX---------------*/
+#logo_index {
+width: 36rem;
+margin: auto;
+display: block;
+max-width: 100%;
+}
+/*----------------FIN LOGO CIRCULAR INDEX---------------*/
+
+
+
+
+
+
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: orangered;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    
+}
+
+
+
+
+
+/*-----------------FOOTER--------------*/
+footer {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: space-around;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+/*-----------------FIN FOOTER--------------*/
+
+
+
+/*---------------------CONTACTO - Formulario----------------------*/
+form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  
+}
+
+#borde_form {
+    border: solid 0.2rem orangered;
+}
+
+#mens {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#titulo_form {
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+}
+
+.parrafo_form{
+    font-size: large;
+    font-style: oblique ;
+    text-align: center;
+    margin: 1rem;
+}
+/*---------------------FIN CONTACTO - Formulario----------------------*/
+
+
+
+
+
+/*------------------¿DONDE ESTAMOS?--------------*/
+
+#maps {
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    margin: 1rem;
+
+}
+/*------------------FIN ¿DONDE ESTAMOS?--------------*/
+
+
+
+/*-------------------DIAS Y HORARIOS---------------------*/
+
+.grilla {
+    color: white;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "menu main"
+        "foot foot";
+  
+   grid-template-rows: 90px 90px 150px;
+   grid-template-columns: 200px 200px;
+
+}
+
+.a {
+    grid-area: head;
+}
+
+
+
+.b {
+    grid-area: menu;
+} 
+
+.d {
+    grid-area: foot;
+}
+
+.a, .b, .c, .c2, .d {
+    display: grid;
+    border: solid 0.3rem orangered;
+    justify-items: center;
+    align-items: center;
+}
+
+/*ultima grilla*/
+.grilla2 {
+    color: white;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "menu main"
+        "menu main" 
+        "foot foot";
+  
+   grid-template-rows: 50px 90px 50px;
+   grid-template-columns: 200px 200px;
+}
+
+
+/*Grillas parrafo*/
+
+.grilla, .grilla2 {
+    display: grid;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+
+/*Animacion Grillas*/
+.grilla, .grilla2 {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+/*-------------------FIN DIAS Y HORARIOS---------------------*/
