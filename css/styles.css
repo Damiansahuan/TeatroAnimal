@@ -8,6 +8,46 @@ html {
 }
 
 
+ul {
+    color: white;
+    font-family:  'Alegreya Sans SC', sans-serif;      
+}
+
+
+
+p {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+
+
+body {
+    background-image: url(../Img/IMG_20200513_160612.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    background-color: orangered;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+}
+
+
+
+
+
 
 
 /*------------------------MENU NAVEGACON FLEX-------------------*/
@@ -27,6 +67,9 @@ html {
     background-color: blue;
 }
 /*---------------------FIN MENU NAVEGACON FLEX-------------------*/
+
+
+
 
 
 
@@ -56,6 +99,8 @@ h1 {
         }
 }
 /*-------------------FIN H1 H2 H6-------------------*/
+
+
 
 
 
@@ -156,6 +201,9 @@ h1 {
 
 
 
+
+
+
 /*-------------------INSTAGRAM REEL INDEX---------------------*/
 .Instagramreel_flex {
     display: flex;
@@ -204,6 +252,7 @@ iframe {
     border-radius: 1rem;
 }
 /*-------------------FIN INSTAGRAM REEL INDEX---------------------*/
+
 
 
 
@@ -348,68 +397,18 @@ iframe {
 
 
 
-
-
-ul {
-    color: white;
-    font-family:  'Alegreya Sans SC', sans-serif;
-      
-}
-
-p {
-    color: white;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    
-}
-
-form {
-    color: white;
-}
-
-
-body {
-    background-image: url(../Img/IMG_20200513_160612.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    background-attachment: fixed;   
-}
-
-
-
-
-
 /*-------------------LOGO CIRCULAR INDEX---------------*/
 #logo_index {
-width: 36rem;
+width: 300px;
 margin: auto;
 display: block;
 max-width: 100%;
+border-radius: 1500px;
+height: 300px;
 }
 /*----------------FIN LOGO CIRCULAR INDEX---------------*/
 
 
-
-
-
-
-
-
-
-
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-header {
-    background-color: orangered;
-    padding: 1.5rem;
-    margin: 0.5rem;
-    border-radius: 2rem;
-    
-}
 
 
 
@@ -432,6 +431,8 @@ footer {
 
 
 
+
+
 /*---------------------CONTACTO - Formulario----------------------*/
 form {
     font-size: 2rem;
@@ -442,6 +443,12 @@ form {
   margin: 1rem;
   
 }
+
+
+form {
+    color: white;
+}
+
 
 #borde_form {
     border: solid 0.2rem orangered;
@@ -472,6 +479,7 @@ form {
 
 
 
+
 /*------------------¿DONDE ESTAMOS?--------------*/
 
 #maps {
@@ -482,6 +490,9 @@ form {
 
 }
 /*------------------FIN ¿DONDE ESTAMOS?--------------*/
+
+
+
 
 
 
