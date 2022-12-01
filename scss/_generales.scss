@@ -48,34 +48,20 @@ header {
 }
 
 
-
-
-/*------------------------MENU NAVEGACON FLEX-------------------*/
-/*.navegacion_flex {
-    display: flex;   
-    list-style: none;
-    font-size: 1.5rem;
-    justify-content: space-around;
-    align-items: center;
-    transition: height 3s;
-}
-
-
-.navegacion_flex li:hover {
-    background-color: blue;
-}
-
-
+/*------------MODIFICACION EN MENU BOOTSTRAP------------*/
 .menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 1.5rem;
-}*/
+}
 
-/*---------------------FIN MENU NAVEGACON FLEX-------------------*/
-
-
+.letra_menu {
+    font-family: $fuente_titulos;
+    color: $textos;
+    font-size: 2rem;
+}
+/*------------FIN MODIFICACION EN MENU BOOTSTRAP------------*/
 
 
 

@@ -32,29 +32,21 @@ header {
   border-radius: 2rem;
 }
 
-/*------------------------MENU NAVEGACON FLEX-------------------*/
-/*.navegacion_flex {
-    display: flex;   
-    list-style: none;
-    font-size: 1.5rem;
-    justify-content: space-around;
-    align-items: center;
-    transition: height 3s;
-}
-
-
-.navegacion_flex li:hover {
-    background-color: blue;
-}
-
-
+/*------------MODIFICACION EN MENU BOOTSTRAP------------*/
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.5rem;
-}*/
-/*---------------------FIN MENU NAVEGACON FLEX-------------------*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+.letra_menu {
+  font-family: "Luckiest Guy", cursive;
+  color: white;
+  font-size: 2rem;
+}
+
+/*------------FIN MODIFICACION EN MENU BOOTSTRAP------------*/
 /*---------------------H1 H2 H6-------------------*/
 h1, h2, h6 {
   color: white;
