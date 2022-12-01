@@ -1,0 +1,165 @@
+/*----------------------INDEX - NUMERALES -------------------------*/
+.numerales {
+    Font-size: 4rem;
+    margin: 2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    "texto1 texto2 texto3";
+    grid-template-columns: 300px 300px 300px;
+}
+
+
+.p1 {
+    grid-area: texto1;
+}
+
+
+.p2 {
+    grid-area: texto2;
+}
+
+
+.p3 {
+    grid-area: texto3;
+}
+
+
+.p1, .p2, .p3 {
+    @include centrado;
+    
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: $pantalla_chica) {
+    .numerales {
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "texto1"
+        "texto2"
+        "texto3";
+        justify-content: center;
+    }
+}
+/*FIN Media Queries*/
+
+
+/*Animacion Numerales*/
+.p1 {
+    animation-duration: 6s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+
+
+.p2 {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+
+
+.p3 {
+    animation-duration: 12s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+/*FIN Animacion Numerales*/
+
+/*----------------FIN INDEX - NUMERALES----------------------------*/
+
+
+
+/*-------------------INSTAGRAM REEL INDEX---------------------*/
+.Instagramreel_flex {
+    display: flex;
+    justify-content: space-evenly;
+
+    display: grid;
+    grid-template-areas: 
+    "reel1 reel2 reel3";
+    grid-template-columns: 300px 300px 300px;
+}
+
+
+.reel1 {
+    grid-area: reel1;
+}
+
+
+.reel2 {
+    grid-area: reel2;
+}
+
+
+.reel3 {
+    grid-area: reel3;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 768px) {
+    .Instagramreel_flex {
+        grid-template-columns: 300px;
+        grid-template-areas: 
+        "reel1" 
+        "reel2" 
+        "reel3";
+        justify-content: center;
+    }
+    .reel1, .reel2, .reel3 {
+        @include centrado;
+        margin: 1rem;
+    }
+}
+
+
+iframe {
+    @extend .bordes;
+    border-radius: 1rem;
+}
+/*-------------------FIN INSTAGRAM REEL INDEX---------------------*/
+
+
+
+/*-------------------LOGO CIRCULAR INDEX---------------*/
+#logo_index {
+    width: 300px;
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    /*border-radius: 1500px;
+    height: 300px;*/
+}
+/*----------------FIN LOGO CIRCULAR INDEX---------------*/

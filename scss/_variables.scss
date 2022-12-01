@@ -1,0 +1,20 @@
+//**VARIABLES**//
+$textos: white;
+$pantalla_chica: 768px;
+$fuente_titulos: 'Luckiest Guy', cursive;
+$fuente_textos: 'Alegreya Sans SC', sans-serif;
+
+//**MIXIN**//
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin formato_textos_nosotros {
+    display: flex;
+    text-align: justify;
+    padding: 0.3rem;
+    font-size: 2rem;
+    border-top: solid 0.2rem orangered;
+    border-bottom: solid 0.2rem orangered;
+}

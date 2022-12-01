@@ -1,0 +1,77 @@
+/*-------------------DIAS Y HORARIOS---------------------*/
+.grilla {
+    color: $textos;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "menu main"
+        "foot foot";
+   grid-template-rows: 90px 90px 190px;
+   grid-template-columns: 200px 200px;
+}
+
+
+.a {
+    grid-area: head;
+}
+
+
+.b {
+    grid-area: menu;
+} 
+
+
+.d {
+    grid-area: foot;
+}
+
+
+.a, .b, .c, .c2, .d {
+    display: grid;
+    border: solid 0.3rem orangered;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/*ultima grilla*/
+.grilla2 {
+    color: $textos;
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "menu main"
+        "menu main" 
+        "foot foot"; 
+   grid-template-rows: 50px 90px 50px;
+   grid-template-columns: 200px 200px;
+}
+
+
+/*Grillas parrafo*/
+.grilla, .grilla2 {
+    display: grid;
+    justify-content: center; 
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+/*Animacion Grillas*/
+.grilla, .grilla2 {
+    animation-duration: 8s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+  }
+
+
+@keyframes aparecer {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+}
+/*-------------------FIN DIAS Y HORARIOS---------------------*/

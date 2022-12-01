@@ -1,0 +1,8 @@
+/*------------------¿DONDE ESTAMOS?--------------*/
+#maps {
+    @include centrado;
+    padding: 10rem;
+    margin: 1rem;
+    @extend .bordes;
+}
+/*---------------FIN ¿DONDE ESTAMOS?--------------*/

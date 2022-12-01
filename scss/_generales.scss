@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+.formato_textos {
+    color: $textos;
+    font-family:  $fuente_textos;     
+}
+
+
+ul {
+    @extend .formato_textos;      
+}
+
+
+p {
+    @extend .formato_textos
+}
+
+
+body {
+    background-image: url(../Img/IMG_20200513_160612.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+
+a {
+    text-decoration: none;
+    @extend .formato_textos;
+}
+
+
+header {
+    background-color: orangered;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+}
+
+
+
+
+/*------------------------MENU NAVEGACON FLEX-------------------*/
+/*.navegacion_flex {
+    display: flex;   
+    list-style: none;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    transition: height 3s;
+}
+
+
+.navegacion_flex li:hover {
+    background-color: blue;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}*/
+
+/*---------------------FIN MENU NAVEGACON FLEX-------------------*/
+
+
+
+
+
+
+/*---------------------H1 H2 H6-------------------*/
+h1, h2, h6 {
+    color: $textos;
+    font-family: $fuente_titulos;
+    }
+
+
+h1 {
+    text-align: center;
+    padding: 3rem;
+    font-size: 5rem;
+
+
+    /*ANIMACION H1*/
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+
+    /*ANIMACION H1*/
+@keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 4;
+        }
+}
+/*-------------------FIN H1 H2 H6-------------------*/
+
+
+
+
+/*-----------------FOOTER--------------*/
+footer {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 2rem;
+    justify-content: space-around;
+    background-color: orangered;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+/*-----------------FIN FOOTER--------------*/
+
+
+
+/*-----------------EXTEND BORDES--------------*/
+.bordes {
+    border: solid 0.2rem orangered;
+}
+/*--------------FIN EXTEND BORDES--------------*/
