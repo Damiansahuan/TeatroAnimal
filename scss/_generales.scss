@@ -114,6 +114,26 @@ footer {
     text-align: center;
     margin-top: 5rem;
 }
+
+
+
+footer {
+    display: grid;
+    grid-template-areas:
+    "ig_footer"
+    "direccion";
+    grid-template-columns: 500px;
+
+}
+
+.ig_footer {
+    grid-area: ig_footer;
+}
+
+.direccion {
+    grid-area: direccion;
+}
+
 /*-----------------FIN FOOTER--------------*/
 
 

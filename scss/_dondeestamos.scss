@@ -5,4 +5,21 @@
     margin: 1rem;
     @extend .bordes;
 }
+
+
+.subtit {
+    @include centrado;
+}
+
+#sociedadit {
+    width: 90%;
+  height: auto;
+  @include centrado;
+  @extend .bordes;
+}
+
+#imagsociedad {
+    @include centrado;
+    margin-top: 3rem;
+}
 /*---------------FIN ¿DONDE ESTAMOS?--------------*/

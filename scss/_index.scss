@@ -102,14 +102,17 @@
 
 
 /*-------------------INSTAGRAM REEL INDEX---------------------*/
+
 .Instagramreel_flex {
     display: flex;
-    justify-content: space-evenly;
+    margin: 2rem;
+    justify-content: center;
+    justify-items: center;
 
     display: grid;
     grid-template-areas: 
     "reel1 reel2 reel3";
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 370px 370px 370px;
 }
 
 
@@ -128,7 +131,7 @@
 }
 
 
-/*Media Queries*/
+
 @media screen and (max-width: 768px) {
     .Instagramreel_flex {
         grid-template-columns: 300px;
@@ -159,7 +162,6 @@ iframe {
     margin: auto;
     display: block;
     max-width: 100%;
-    /*border-radius: 1500px;
-    height: 300px;*/
+    
 }
 /*----------------FIN LOGO CIRCULAR INDEX---------------*/

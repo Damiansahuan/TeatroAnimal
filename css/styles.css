@@ -88,9 +88,23 @@ footer {
   margin-top: 5rem;
 }
 
+footer {
+  display: grid;
+  grid-template-areas: "ig_footer" "direccion";
+  grid-template-columns: 500px;
+}
+
+.ig_footer {
+  grid-area: ig_footer;
+}
+
+.direccion {
+  grid-area: direccion;
+}
+
 /*-----------------FIN FOOTER--------------*/
 /*-----------------EXTEND BORDES--------------*/
-.bordes, #borde_form, #maps, iframe {
+.bordes, #borde_form, #sociedadit, #maps, iframe {
   border: solid 0.2rem orangered;
 }
 
@@ -179,10 +193,12 @@ footer {
 /*-------------------INSTAGRAM REEL INDEX---------------------*/
 .Instagramreel_flex {
   display: flex;
-  justify-content: space-evenly;
+  margin: 2rem;
+  justify-content: center;
+  justify-items: center;
   display: grid;
   grid-template-areas: "reel1 reel2 reel3";
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 370px 370px 370px;
 }
 
 .reel1 {
@@ -197,7 +213,6 @@ footer {
   grid-area: reel3;
 }
 
-/*Media Queries*/
 @media screen and (max-width: 768px) {
   .Instagramreel_flex {
     grid-template-columns: 300px;
@@ -221,8 +236,6 @@ iframe {
   margin: auto;
   display: block;
   max-width: 100%;
-  /*border-radius: 1500px;
-  height: 300px;*/
 }
 
 /*----------------FIN LOGO CIRCULAR INDEX---------------*/
@@ -336,6 +349,24 @@ iframe {
   justify-content: center;
   padding: 10rem;
   margin: 1rem;
+}
+
+.subtit {
+  display: flex;
+  justify-content: center;
+}
+
+#sociedadit {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#imagsociedad {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
 /*---------------FIN ¿DONDE ESTAMOS?--------------*/
