@@ -5,22 +5,13 @@ form {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-}
-
-
-form {
     color: $textos;
 }
 
 
 #borde_form {
     @extend .bordes;
-}
-
-
-#mens {
-    display: flex;
-    align-items: center; 
+    background: rgba(6, 25, 71, 0.6);
 }
 
 
@@ -35,5 +26,40 @@ form {
     font-style: oblique ;
     text-align: center;
     margin: 1rem;
+}
+
+
+.mensaje {
+    display: flex;
+    align-items: center; 
+}
+
+
+.enviar {
+    @include centrado;
+    margin-bottom: 1rem;
+}
+
+
+.enviar .boton {
+    width: 90%;
+    background: rgba(6, 25, 71);
+    border-radius: 1rem;
+    color: $textos;
+}
+
+
+.nombre, .email, .tel, .mensaje {
+    display: flex;
+    justify-content: right;
+    margin: 1rem;
+}
+
+
+#nombre, #email, #tel, #mensaje {
+display: flex;
+margin-left: 1rem;
+border-radius: 1rem;
+border: solid 0.2rem orangered;
 }
 /*---------------------FIN CONTACTO - Formulario----------------------*/

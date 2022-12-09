@@ -47,8 +47,8 @@ header {
 }
 
 /*------------FIN MODIFICACION EN MENU BOOTSTRAP------------*/
-/*---------------------H1 H2 H6-------------------*/
-h1, h2, h6 {
+/*---------------------H1 H2 H3-------------------*/
+h1, h2, h3 {
   color: white;
   font-family: "Luckiest Guy", cursive;
 }
@@ -327,6 +327,7 @@ iframe {
     border-top: 0.2rem;
   }
 }
+/*FIN Media Queries*/
 /*ANIMACION TEXTOS*/
 .n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
   animation-duration: 8s;
@@ -342,6 +343,7 @@ iframe {
     opacity: 1;
   }
 }
+/*FIN ANIMACION TEXTOS*/
 /*-----------------FIN NOSOTROS---------------------*/
 /*------------------¿DONDE ESTAMOS?--------------*/
 #maps {
@@ -349,6 +351,7 @@ iframe {
   justify-content: center;
   padding: 10rem;
   margin: 1rem;
+  background: rgba(6, 25, 71, 0.6);
 }
 
 .subtit {
@@ -396,6 +399,7 @@ iframe {
   border: solid 0.3rem orangered;
   justify-items: center;
   align-items: center;
+  background: rgba(5, 7, 12, 0.4);
 }
 
 /*ultima grilla*/
@@ -407,6 +411,7 @@ iframe {
   grid-template-columns: 200px 200px;
 }
 
+/*FIN ultima grilla*/
 /*Grillas parrafo*/
 .grilla, .grilla2 {
   display: grid;
@@ -416,6 +421,7 @@ iframe {
   padding: 1rem;
 }
 
+/*FIN Grillas parrafo*/
 /*Animacion Grillas*/
 .grilla, .grilla2 {
   animation-duration: 8s;
@@ -431,6 +437,7 @@ iframe {
     opacity: 1;
   }
 }
+/*FIN Animacion Grillas*/
 /*-------------------FIN DIAS Y HORARIOS---------------------*/
 /*---------------------CONTACTO - Formulario----------------------*/
 form {
@@ -440,15 +447,11 @@ form {
   flex-direction: column;
   align-items: center;
   margin: 1rem;
-}
-
-form {
   color: white;
 }
 
-#mens {
-  display: flex;
-  align-items: center;
+#borde_form {
+  background: rgba(6, 25, 71, 0.6);
 }
 
 #titulo_form {
@@ -462,6 +465,37 @@ form {
   font-style: oblique;
   text-align: center;
   margin: 1rem;
+}
+
+.mensaje {
+  display: flex;
+  align-items: center;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.enviar .boton {
+  width: 90%;
+  background: rgb(6, 25, 71);
+  border-radius: 1rem;
+  color: white;
+}
+
+.nombre, .email, .tel, .mensaje {
+  display: flex;
+  justify-content: right;
+  margin: 1rem;
+}
+
+#nombre, #email, #tel, #mensaje {
+  display: flex;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: solid 0.2rem orangered;
 }
 
 /*---------------------FIN CONTACTO - Formulario----------------------*/
